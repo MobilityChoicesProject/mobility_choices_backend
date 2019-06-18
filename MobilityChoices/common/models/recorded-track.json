@@ -1,0 +1,38 @@
+{
+  "name": "RecordedTrack",
+  "plural": "RecordedTracks",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "isTracking": {
+      "type": "boolean"
+    },
+    "reason": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "trackdata": {
+      "type": "hasMany",
+      "model": "Trackdata",
+      "foreignKey": ""
+    },
+    "mobilityUser": {
+      "type": "belongsTo",
+      "model": "MobilityUser",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

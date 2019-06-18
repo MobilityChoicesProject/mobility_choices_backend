@@ -1,0 +1,33 @@
+{
+  "restApiRoot": "/api",
+  "host": "0.0.0.0",
+  "port": 3000,
+  "remoting": {
+    "context": false,
+    "rest": {
+      "handleErrors": false,
+      "normalizeHttpPath": false,
+      "xml": false
+    },
+    "json": {
+      "strict": false,
+      "limit": "100mb"
+    },
+    "urlencoded": {
+      "extended": true,
+      "limit": "100mb"
+    },
+    "cors": false
+  },
+  "parserOptions": {
+    "ecmaVersion": 2017
+  },
+  "httpMode": false,
+  "certConfig": {
+    "key": "PEM FILE FOR SSL PRIVATE KEY",
+    "cert": "PEM FILE FOR SSL CERTIFICATE",
+    "ca": [],
+    "requestCert": false,
+    "rejectUnauthorized": false
+  }
+}

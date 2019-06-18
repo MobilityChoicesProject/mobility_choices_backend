@@ -1,0 +1,31 @@
+{
+  "name": "Device",
+  "plural": "Devices",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "version": {
+      "type": "string"
+    },
+    "pushtoken": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {    
+    "mobilityUser": {
+      "type": "belongsTo",
+      "model": "MobilityUser",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,34 @@
+{
+  "name": "AnonymizedTrack",
+  "plural": "AnonymizedTracks",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "sections": {
+      "type": "array",
+      "required": true
+    },
+    "event": {
+      "type": "string",
+      "default": "event"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "track": {
+      "type": "belongsTo",
+      "model": "Track",
+      "foreignKey": ""
+    },
+    "mobilityUser": {
+      "type": "belongsTo",
+      "model": "MobilityUser",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,33 @@
+{
+  "db": {
+    "host": "DB HOST",
+    "port": "DB PORT",
+    "database": "NAME OF YOUR DATABASE",
+    "username": "DATABASE USERNAME",
+    "password": "DATABASE PASSWORD",
+    "name": "DATASOURCE NAME",
+    "connector": "mongodb"
+  },
+  "analysedb": {
+    "host": "DB HOST",
+    "port": "DB PORT",
+    "database": "NAME FOR ANALYSE DATABASE",
+    "name": "DATASOURCE NAME",
+    "connector": "mongodb"
+    },
+  "mail": {
+    "connector": "mail",
+    "transports": [
+      {
+        "type": "TYPE OF MAIL HOST",
+        "host": "MAIL HOST",
+        "secureConnection": true,
+        "port": "PORT",
+        "auth": {
+          "user": "USERNAME",
+          "pass": "PASSWORD"
+        }
+      }
+    ]
+  }
+}

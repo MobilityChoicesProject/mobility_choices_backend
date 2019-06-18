@@ -1,0 +1,64 @@
+{
+  "name": "Track",
+  "plural": "Tracks",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "alreadySynced": {
+      "type": "boolean"
+    },
+    "approved": {
+      "type": "boolean"
+    },
+    "deletedByClient": {
+      "type": "boolean",
+      "default": false
+    },
+    "sections": {
+      "type": "array",
+      "required": true
+    },
+    "type": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string",
+      "default": ""
+    },
+    "name": {
+      "type": "string",
+      "default": "Neuer Track"
+    },
+    "reason": {
+      "type": "string",
+      "default": ""
+    },
+    "date": {
+      "type": "date"
+    },
+    "duration": {
+      "type": "number",
+      "default": 0
+    },
+    "correctnessscore": {
+      "type": "number",
+      "default": 0
+    },
+    "evaluation": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "mobilityUser": {
+      "type": "belongsTo",
+      "model": "MobilityUser",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

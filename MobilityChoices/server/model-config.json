@@ -1,0 +1,80 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "db",
+    "public": false,
+    "option":{
+      "emailVerificationRequired": true}
+
+  },
+
+  "Email": {
+    "dataSource": "mail"
+  },
+
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Profile": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Track": {
+    "dataSource": "db",
+    "public": true
+  },
+  "MobilityUser": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Device": {
+    "dataSource": "db",
+    "public": true
+  },
+  "RecordedTrack": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Trackdata": {
+    "dataSource": "db",
+    "public": true
+  },
+  "AnonymizedTrack": {
+    "dataSource": "db",
+    "public": true
+  },
+  "Usergroup": {
+    "dataSource": "analysedb",
+    "public": true
+  },
+  "AnalyseUser": {
+    "dataSource": "analysedb",
+    "public": true
+  }
+}

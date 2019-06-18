@@ -1,0 +1,52 @@
+{
+  "name": "MobilityUser",
+  "plural": "MobilityUsers",
+  "base": "User",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "firebaseToken": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "profile": {
+      "type": "hasOne",
+      "model": "Profile",
+      "foreignKey": "profile"
+    },
+    "tracks": {
+      "type": "hasMany",
+      "model": "Track",
+      "foreignKey": ""
+    },
+    "devices": {
+      "type": "hasMany",
+      "model": "Device",
+      "foreignKey": ""
+    },
+    "recordedTracks": {
+      "type": "hasMany",
+      "model": "RecordedTrack",
+      "foreignKey": ""
+    }
+  },
+  "acls": [
+    {
+      "accessType": "READ",
+      "principalType": "ROLE",
+      "principalId": "$everyone",
+      "permission": "ALLOW"
+    },
+    {
+      "accessType": "WRITE",
+      "principalType": "ROLE",
+      "principalId": "$owner",
+      "permission": "ALLOW"
+    }
+  ],
+  "methods": {}
+}

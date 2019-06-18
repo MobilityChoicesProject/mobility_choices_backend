@@ -1,0 +1,106 @@
+{
+  "name": "Profile",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "bike": {
+      "type": "boolean"
+    },
+    "bus": {
+      "type": "boolean"
+    },
+    "car": {
+      "type": "boolean"
+    },
+    "carType": {
+      "type": "string"
+    },
+    "ebike": {
+      "type": "boolean"
+    },
+    "motorbike": {
+      "type": "boolean"
+    },
+    "train": {
+      "type": "boolean"
+    },
+    "ecar": {
+      "type": "boolean"
+    },
+    "ecarType": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "costValue": {
+      "type": "number",
+      "default": 0
+    },
+    "envValue": {
+      "type": "number",
+      "default": 0
+    },
+    "healthValue": {
+      "type": "number",
+      "default": 0
+    },
+    "timeValue": {
+      "type": "number",
+      "default": 0
+    },
+    "ewastage": {
+      "type": "string"
+    },
+    "wastage": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string",
+      "default": "AT"
+    },
+    "city": {
+      "type": "string",
+      "default": "Dornbirn"
+    },
+    "age": {
+      "type": "number",
+      "default": 100
+    },
+    "gender": {
+      "type": "string",
+      "default": "f"
+    },
+    "bikeThreshold": {
+      "type": "number",
+      "default": 12
+    },
+    "footThreshold": {
+      "type": "number",
+      "default": 5
+    },
+    "changeTrainThreshold": {
+      "type": "number",
+      "default": 5
+    },
+    "waitingTimeThreshold": {
+      "type": "number",
+      "default": 30
+    },
+    "footToStationThreshold": {
+      "type": "number",
+      "default": 3
+    },
+    "bikeToStationThreshold": {
+      "type": "number",
+      "default": 7
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

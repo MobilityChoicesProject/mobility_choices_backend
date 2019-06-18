@@ -1,0 +1,47 @@
+{
+  "name": "Trackdata",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "accuracy": {
+      "type": "number"
+    },
+    "altitude": {
+      "type": "number"
+    },
+    "latitude": {
+      "type": "number",
+      "required": true
+    },
+    "longitude": {
+      "type": "number",
+      "required": true
+    },
+    "timestamp": {
+      "type": "date",
+      "required": true
+    },
+    "confidence": {
+      "type": "number"
+    },
+    "type": {
+      "type": "string"
+    },
+    "speed": {
+      "type": "number"
+    }
+  },
+  "validations": [],
+  "relations": {
+    "recordedTrack": {
+      "type": "belongsTo",
+      "model": "RecordedTrack",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
